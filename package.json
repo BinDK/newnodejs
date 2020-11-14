@@ -1,0 +1,28 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BinDK/newnodejs.git"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "BinDK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BinDK/newnodejs/issues"
+  },
+  "homepage": "https://github.com/BinDK/newnodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "websocket": "^1.0.32"
+  }
+}
