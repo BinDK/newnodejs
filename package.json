@@ -2,10 +2,11 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --inspect src/index.js --ext js,json,css,scss,hbs --ignore resource/public",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass -w src/resource/scss/ -o src/public/css/"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,15 @@
   },
   "homepage": "https://github.com/BinDK/newnodejs#readme",
   "dependencies": {
+    "connect-livereload": "^0.6.1",
     "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "livereload": "^0.9.1",
     "nodemon": "^2.0.6",
     "websocket": "^1.0.32"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^5.0.0"
   }
 }
